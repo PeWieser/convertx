@@ -22,7 +22,8 @@ class ImageMagickHandler implements FormatHandler {
 
   async init () {
 
-    const wasmLocation = "/convert/wasm/magick.wasm";
+    const version = "0.0.37";
+    const wasmLocation = `https://unpkg.com/@imagemagick/magick-wasm@${version}/dist/magick.wasm`;
     const wasmBuffer = await fetch(wasmLocation).then(r => r.arrayBuffer());
     const wasmBytes = new Uint8Array(wasmBuffer);
 
