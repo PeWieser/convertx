@@ -25,10 +25,10 @@ export default defineConfig({
           src: "node_modules/@ffmpeg/core/dist/esm/ffmpeg-core.*",
           dest: "wasm"
         },*/
-        {
+        /*{
           src: "node_modules/@imagemagick/magick-wasm/dist/magick.wasm",
           dest: "wasm"
-        },
+        },*/
         {
           src: "src/handlers/libopenmpt/libopenmpt.wasm",
           dest: "wasm"
